@@ -7,7 +7,10 @@ impl ::bb8_07::ManageConnection for Manager {
     async fn connect(&self) -> Result<Self::Connection, Self::Error> {
         Ok(())
     }
-    async fn is_valid(&self, _: &mut bb8_07::PooledConnection<'_, Self>) -> Result<(), Self::Error> {
+    async fn is_valid(
+        &self,
+        _: &mut bb8_07::PooledConnection<'_, Self>,
+    ) -> Result<(), Self::Error> {
         Ok(())
     }
     fn has_broken(&self, _: &mut Self::Connection) -> bool {

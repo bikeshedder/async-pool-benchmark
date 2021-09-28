@@ -12,29 +12,29 @@ async fn run_benchmarks(pool_size: usize, workers: usize, iterations: usize) {
     println!("iterations: {}", iterations);
     println!("-----------------------------");
 
-    let iterations = iterations / workers;
+    let iterations_per_worker = iterations / workers;
 
     {
         let start = Instant::now();
-        deadpool_09::benchmark_deadpool(pool_size, workers, iterations).await;
+        deadpool_09::benchmark_deadpool(pool_size, workers, iterations_per_worker).await;
         let end = Instant::now();
         println!("deadpool 0.9: {}ms", end.duration_since(start).as_millis());
     }
     {
         let start = Instant::now();
-        deadpool_08::benchmark_deadpool(pool_size, workers, iterations).await;
+        deadpool_08::benchmark_deadpool(pool_size, workers, iterations_per_worker).await;
         let end = Instant::now();
         println!("deadpool 0.8: {}ms", end.duration_since(start).as_millis());
     }
     {
         let start = Instant::now();
-        bb8_07::benchmark_bb8(pool_size, workers, iterations).await;
+        bb8_07::benchmark_bb8(pool_size, workers, iterations_per_worker).await;
         let end = Instant::now();
         println!("bb8 0.8: {}ms", end.duration_since(start).as_millis());
     }
     {
         let start = Instant::now();
-        mobc_07::benchmark_mobc(pool_size, workers, iterations).await;
+        mobc_07::benchmark_mobc(pool_size, workers, iterations_per_worker).await;
         let end = Instant::now();
         println!("mobc 0.7: {}ms", end.duration_since(start).as_millis());
     }

@@ -7,7 +7,10 @@ impl ::deadpool_08::managed::Manager for Manager {
     async fn create(&self) -> Result<Self::Type, Self::Error> {
         Ok(())
     }
-    async fn recycle(&self, _: &mut Self::Type) -> deadpool_08::managed::RecycleResult<Self::Error> {
+    async fn recycle(
+        &self,
+        _: &mut Self::Type,
+    ) -> deadpool_08::managed::RecycleResult<Self::Error> {
         Ok(())
     }
 }
