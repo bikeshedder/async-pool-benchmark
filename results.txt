@@ -1,0 +1,66 @@
+-----------------------------
+pool_size: 1
+workers: 16
+iterations: 1048576
+-----------------------------
+deadpool 0.9: 397ms
+deadpool 0.8: 334ms
+bb8 0.8: 599ms
+mobc 0.7: 1959ms
+
+
+-----------------------------
+pool_size: 8
+workers: 16
+iterations: 1048576
+-----------------------------
+deadpool 0.9: 848ms
+deadpool 0.8: 974ms
+bb8 0.8: 844ms
+mobc 0.7: 46519ms
+
+
+-----------------------------
+pool_size: 16
+workers: 16
+iterations: 1048576
+-----------------------------
+deadpool 0.9: 480ms
+deadpool 0.8: 394ms
+bb8 0.8: 753ms
+mobc 0.7: 8278ms
+
+
+-----------------------------
+pool_size: 16
+workers: 32
+iterations: 1048576
+-----------------------------
+deadpool 0.9: 497ms
+deadpool 0.8: 400ms
+bb8 0.8: 1398ms
+mobc 0.7: 20016ms
+
+
+-----------------------------
+pool_size: 32
+workers: 32
+iterations: 1048576
+-----------------------------
+deadpool 0.9: 460ms
+deadpool 0.8: 391ms
+bb8 0.8: 705ms
+mobc 0.7: 5945ms
+
+
+-----------------------------
+pool_size: 32
+workers: 128
+iterations: 1048576
+-----------------------------
+deadpool 0.9: 458ms
+deadpool 0.8: 397ms
+bb8 0.8: 758ms
+mobc 0.7: 4287ms
+
+
