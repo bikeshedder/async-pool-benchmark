@@ -1,31 +1,21 @@
 struct Manager {}
 
 #[async_trait::async_trait]
-impl ::bb8_07::ManageConnection for Manager {
+impl ::mobc_0_7::Manager for Manager {
     type Connection = ();
     type Error = ();
     async fn connect(&self) -> Result<Self::Connection, Self::Error> {
         Ok(())
     }
-    async fn is_valid(
-        &self,
-        _: &mut bb8_07::PooledConnection<'_, Self>,
-    ) -> Result<(), Self::Error> {
+    async fn check(&self, _: Self::Connection) -> Result<Self::Connection, Self::Error> {
         Ok(())
-    }
-    fn has_broken(&self, _: &mut Self::Connection) -> bool {
-        false
     }
 }
 
-type Pool = bb8_07::Pool<Manager>;
+type Pool = ::mobc_0_7::Pool<Manager>;
 
-pub async fn benchmark_bb8(pool_size: usize, iterations: usize, workers: usize) {
-    let pool = Pool::builder()
-        .max_size(pool_size as u32)
-        .build(Manager {})
-        .await
-        .unwrap();
+pub async fn benchmark_mobc(pool_size: usize, workers: usize, iterations: usize) {
+    let pool = Pool::builder().max_open(pool_size as u64).build(Manager {});
     let handles = (0..workers)
         .map(|_| {
             let pool = pool.clone();

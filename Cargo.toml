@@ -8,10 +8,11 @@ edition = "2018"
 [dependencies]
 async-trait = { version = "0.1" }
 tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
-deadpool_08 = { package = "deadpool", version = "0.8", features = ['managed'] }
-deadpool_09 = { package = "deadpool", version = "0.9", features = ['managed'] }
-bb8_07 = { package = "bb8", version = "0.7" }
-mobc_07 = { package = "mobc", version = "0.7" }
+deadpool_0_8 = { package = "deadpool", version = "0.8", features = ['managed'] }
+deadpool_0_9 = { package = "deadpool", version = "0.9", features = ['managed'] }
+bb8_0_7 = { package = "bb8", version = "0.7" }
+mobc_0_7 = { package = "mobc", version = "0.7" }
+plotters = { version = "0.3.1", features = ["svg_backend"] }
 
 [profile.release]
 debug = true

@@ -3,10 +3,10 @@ pool_size: 1
 workers: 16
 iterations: 1048576
 -----------------------------
-deadpool 0.9: 374ms
-deadpool 0.8: 325ms
-bb8 0.8: 598ms
-mobc 0.7: 1884ms
+deadpool 0.8: 252ms
+deadpool 0.9: 304ms
+bb8 0.8: 370ms
+mobc 0.7: 1641ms
 
 
 -----------------------------
@@ -14,10 +14,10 @@ pool_size: 8
 workers: 16
 iterations: 1048576
 -----------------------------
-deadpool 0.9: 897ms
-deadpool 0.8: 919ms
-bb8 0.8: 868ms
-mobc 0.7: 45269ms
+deadpool 0.8: 835ms
+deadpool 0.9: 850ms
+bb8 0.8: 736ms
+mobc 0.7: 2366ms
 
 
 -----------------------------
@@ -25,10 +25,10 @@ pool_size: 16
 workers: 16
 iterations: 1048576
 -----------------------------
-deadpool 0.9: 453ms
-deadpool 0.8: 403ms
-bb8 0.8: 706ms
-mobc 0.7: 11967ms
+deadpool 0.8: 412ms
+deadpool 0.9: 446ms
+bb8 0.8: 476ms
+mobc 0.7: 2208ms
 
 
 -----------------------------
@@ -36,10 +36,10 @@ pool_size: 16
 workers: 32
 iterations: 1048576
 -----------------------------
-deadpool 0.9: 473ms
-deadpool 0.8: 402ms
-bb8 0.8: 1388ms
-mobc 0.7: 6162ms
+deadpool 0.8: 412ms
+deadpool 0.9: 441ms
+bb8 0.8: 1392ms
+mobc 0.7: 2412ms
 
 
 -----------------------------
@@ -47,10 +47,10 @@ pool_size: 32
 workers: 32
 iterations: 1048576
 -----------------------------
-deadpool 0.9: 448ms
-deadpool 0.8: 393ms
-bb8 0.8: 791ms
-mobc 0.7: 4995ms
+deadpool 0.8: 410ms
+deadpool 0.9: 447ms
+bb8 0.8: 806ms
+mobc 0.7: 2076ms
 
 
 -----------------------------
@@ -58,9 +58,7 @@ pool_size: 32
 workers: 128
 iterations: 1048576
 -----------------------------
-deadpool 0.9: 449ms
-deadpool 0.8: 388ms
-bb8 0.8: 770ms
-mobc 0.7: 4015ms
-
-
+deadpool 0.8: 413ms
+deadpool 0.9: 446ms
+bb8 0.8: 869ms
+mobc 0.7: 2232ms

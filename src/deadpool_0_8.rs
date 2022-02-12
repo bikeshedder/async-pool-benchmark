@@ -1,7 +1,7 @@
 struct Manager {}
 
 #[async_trait::async_trait]
-impl ::deadpool_09::managed::Manager for Manager {
+impl ::deadpool_0_8::managed::Manager for Manager {
     type Type = ();
     type Error = ();
     async fn create(&self) -> Result<Self::Type, Self::Error> {
@@ -10,18 +10,15 @@ impl ::deadpool_09::managed::Manager for Manager {
     async fn recycle(
         &self,
         _: &mut Self::Type,
-    ) -> deadpool_09::managed::RecycleResult<Self::Error> {
+    ) -> deadpool_0_8::managed::RecycleResult<Self::Error> {
         Ok(())
     }
 }
 
-type Pool = ::deadpool_09::managed::Pool<Manager>;
+type Pool = ::deadpool_0_8::managed::Pool<Manager>;
 
-pub async fn benchmark_deadpool(pool_size: usize, iterations: usize, workers: usize) {
-    let pool = Pool::builder(Manager {})
-        .max_size(pool_size)
-        .build()
-        .unwrap();
+pub async fn benchmark_deadpool(pool_size: usize, workers: usize, iterations: usize) {
+    let pool = Pool::new(Manager {}, pool_size);
     let handles = (0..workers)
         .map(|_| {
             let pool = pool.clone();
