@@ -1,3 +1,4 @@
+mod async_object_pool_0_1;
 mod bb8_0_7;
 mod bb8_0_8;
 mod deadpool_0_7;
@@ -98,6 +99,9 @@ async fn run_benchmarks(pool_size: usize, workers: usize, iterations: usize) -> 
     benchmark.run("bb8", "0.8", bb8_0_8::run).await;
     benchmark.run("mobc", "0.7", mobc_0_7::run).await;
     benchmark.run("qp", "0.2", qp_0_2::run).await;
+    benchmark
+        .run("async-object-pool", "0.1", async_object_pool_0_1::run)
+        .await;
     println!();
     benchmark
 }
