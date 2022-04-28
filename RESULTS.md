@@ -1,6 +1,6 @@
 # Benchmark results
 
-> **Attention!** The following results include `bb8` and `qp` which
+> ⚠ **Attention!** The following results include `bb8` and `qp` which
 > seam to contain bugs which can cause deadlocks. This benchmark does
 > not trigger those bugs but another one created by
 > [Astro36](https://github.com/Astro36) does:
