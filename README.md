@@ -1,13 +1,13 @@
 # Benchmarks of async pools for rust
 
-<a href="./RESULTS.md"><img src="./results-button.svg"></a>
+[![View benchmark results](results-button.svg)](./RESULTS.md)
 
-> ⚠ Please read and run the benchmark code yourself.
+> ⚠ **Please read and run the benchmark code yourself.
 > Don't blindly trust and base your decisions on what
-> I've published here.
+> I've published here.**
 
-> 🛈 Also keep in mind that speed isn't everything
-> when it comes to pools. Look at the feature list,
+> 💡 Keep in mind that speed isn't everything when it
+> comes to software. Have a look at the feature list,
 > overall code quality and then make an informed decision.
 
 ## How to run?
