@@ -1,0 +1,7 @@
+<svg width="223" height="76" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g transform="translate(0 0)">
+<rect width="207" height="36" rx="4" transform="translate(0 0)" fill="#1e89ef"></rect><text transform="translate(40 23)" fill="white" font-size="14" font-family="Roboto-Medium,Roboto" ><tspan x="0" y="0">View benchmark results</tspan></text>
+</g><g transform="translate(12 8)"><rect width="20" height="20" fill="#ffffff" opacity="0"></rect>
+<g transform="matrix(0.43 0 0 0.43 10 10)">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill:#ffffff;" transform=" translate(-25, -27)" d="M 34 4 L 34 50 L 48 50 L 48 4 Z M 2 17 L 2 50 L 16 50 L 16 17 Z M 18 28 L 18 50 L 32 50 L 32 28 Z" stroke-linecap="round"></path>
+</g>
+</g></svg>
