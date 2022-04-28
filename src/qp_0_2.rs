@@ -5,21 +5,15 @@ use crate::BenchmarkConfig;
 struct Manager {}
 
 #[async_trait::async_trait]
-impl ::deadpool_0_8::managed::Manager for Manager {
-    type Type = ();
+impl ::qp_0_2::resource::Manage for Manager {
+    type Output = ();
     type Error = ();
-    async fn create(&self) -> Result<Self::Type, Self::Error> {
-        Ok(())
-    }
-    async fn recycle(
-        &self,
-        _: &mut Self::Type,
-    ) -> deadpool_0_8::managed::RecycleResult<Self::Error> {
+    async fn try_create(&self) -> Result<Self::Output, Self::Error> {
         Ok(())
     }
 }
 
-type Pool = ::deadpool_0_8::managed::Pool<Manager>;
+type Pool = ::qp_0_2::Pool<Manager>;
 
 pub async fn run(cfg: BenchmarkConfig) -> Vec<JoinHandle<()>> {
     let pool = Pool::new(Manager {}, cfg.pool_size);
@@ -28,7 +22,7 @@ pub async fn run(cfg: BenchmarkConfig) -> Vec<JoinHandle<()>> {
             let pool = pool.clone();
             tokio::spawn(async move {
                 for _ in 0..cfg.iterations_per_worker {
-                    let _ = pool.get().await;
+                    let _ = pool.acquire().await;
                 }
             })
         })

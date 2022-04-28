@@ -1,0 +1,1136 @@
+[
+  {
+    "config": {
+      "pool_size": 8,
+      "workers": 8,
+      "iterations": 1048576,
+      "iterations_per_worker": 131072
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 324381062
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 386357188
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 0,
+          "nanos": 436781575
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 209056765
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 241798218
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 115919915
+        }
+      }
+    ]
+  },
+  {
+    "config": {
+      "pool_size": 8,
+      "workers": 16,
+      "iterations": 1048576,
+      "iterations_per_worker": 65536
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 903885566
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 888575159
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 1,
+          "nanos": 30012825
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 732709745
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 725959927
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 121914223
+        }
+      }
+    ]
+  },
+  {
+    "config": {
+      "pool_size": 8,
+      "workers": 32,
+      "iterations": 1048576,
+      "iterations_per_worker": 32768
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 887113603
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 892743392
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 0,
+          "nanos": 854414899
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 721254615
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 722878059
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 125300344
+        }
+      }
+    ]
+  },
+  {
+    "config": {
+      "pool_size": 8,
+      "workers": 64,
+      "iterations": 1048576,
+      "iterations_per_worker": 16384
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 897684368
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 897900101
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 0,
+          "nanos": 778301162
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 704187542
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 729605582
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 123389422
+        }
+      }
+    ]
+  },
+  {
+    "config": {
+      "pool_size": 8,
+      "workers": 128,
+      "iterations": 1048576,
+      "iterations_per_worker": 8192
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 859766315
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 860644910
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 0,
+          "nanos": 796603110
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 699347786
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 705404851
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 120322840
+        }
+      }
+    ]
+  },
+  {
+    "config": {
+      "pool_size": 8,
+      "workers": 256,
+      "iterations": 1048576,
+      "iterations_per_worker": 4096
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 881080504
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 881944558
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 0,
+          "nanos": 830423009
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 706774578
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 726803911
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 121532202
+        }
+      }
+    ]
+  },
+  {
+    "config": {
+      "pool_size": 16,
+      "workers": 8,
+      "iterations": 1048576,
+      "iterations_per_worker": 131072
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 325792037
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 378409241
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 0,
+          "nanos": 434347502
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 289753387
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 229496887
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 120550298
+        }
+      }
+    ]
+  },
+  {
+    "config": {
+      "pool_size": 16,
+      "workers": 16,
+      "iterations": 1048576,
+      "iterations_per_worker": 65536
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 475204720
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 412123102
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 0,
+          "nanos": 460064280
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 490602177
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 425316580
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 115469801
+        }
+      }
+    ]
+  },
+  {
+    "config": {
+      "pool_size": 16,
+      "workers": 32,
+      "iterations": 1048576,
+      "iterations_per_worker": 32768
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 464136608
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 403206668
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 0,
+          "nanos": 426847951
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 1,
+          "nanos": 373155036
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 1,
+          "nanos": 461769230
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 117450463
+        }
+      }
+    ]
+  },
+  {
+    "config": {
+      "pool_size": 16,
+      "workers": 64,
+      "iterations": 1048576,
+      "iterations_per_worker": 16384
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 465423084
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 397656602
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 0,
+          "nanos": 465360929
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 1,
+          "nanos": 511010687
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 1,
+          "nanos": 484439169
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 115260994
+        }
+      }
+    ]
+  },
+  {
+    "config": {
+      "pool_size": 16,
+      "workers": 128,
+      "iterations": 1048576,
+      "iterations_per_worker": 8192
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 477497088
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 408277743
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 0,
+          "nanos": 546114170
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 1,
+          "nanos": 325678734
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 1,
+          "nanos": 467294022
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 117159338
+        }
+      }
+    ]
+  },
+  {
+    "config": {
+      "pool_size": 16,
+      "workers": 256,
+      "iterations": 1048576,
+      "iterations_per_worker": 4096
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 482729859
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 411383388
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 0,
+          "nanos": 440165633
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 1,
+          "nanos": 472575571
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 1,
+          "nanos": 488376132
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 115330392
+        }
+      }
+    ]
+  },
+  {
+    "config": {
+      "pool_size": 32,
+      "workers": 8,
+      "iterations": 1048576,
+      "iterations_per_worker": 131072
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 329946457
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 400683826
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 0,
+          "nanos": 414543269
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 223619136
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 275521931
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 119921898
+        }
+      }
+    ]
+  },
+  {
+    "config": {
+      "pool_size": 32,
+      "workers": 16,
+      "iterations": 1048576,
+      "iterations_per_worker": 65536
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 487388675
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 394614077
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 0,
+          "nanos": 435440687
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 561089588
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 666751964
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 114772269
+        }
+      }
+    ]
+  },
+  {
+    "config": {
+      "pool_size": 32,
+      "workers": 32,
+      "iterations": 1048576,
+      "iterations_per_worker": 32768
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 458372754
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 406126949
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 0,
+          "nanos": 438035823
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 848582707
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 810901438
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 115704761
+        }
+      }
+    ]
+  },
+  {
+    "config": {
+      "pool_size": 32,
+      "workers": 64,
+      "iterations": 1048576,
+      "iterations_per_worker": 16384
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 482312452
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 419869082
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 0,
+          "nanos": 452089897
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 796203985
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 810057011
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 116815124
+        }
+      }
+    ]
+  },
+  {
+    "config": {
+      "pool_size": 32,
+      "workers": 128,
+      "iterations": 1048576,
+      "iterations_per_worker": 8192
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 477052488
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 401956241
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 0,
+          "nanos": 434043401
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 1,
+          "nanos": 244135134
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 816283229
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 115549549
+        }
+      }
+    ]
+  },
+  {
+    "config": {
+      "pool_size": 32,
+      "workers": 256,
+      "iterations": 1048576,
+      "iterations_per_worker": 4096
+    },
+    "results": [
+      {
+        "name": "deadpool",
+        "version": "0.7",
+        "duration": {
+          "secs": 0,
+          "nanos": 479390902
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 391995768
+        }
+      },
+      {
+        "name": "deadpool",
+        "version": "0.9",
+        "duration": {
+          "secs": 0,
+          "nanos": 495185076
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.7",
+        "duration": {
+          "secs": 1,
+          "nanos": 305839836
+        }
+      },
+      {
+        "name": "bb8",
+        "version": "0.8",
+        "duration": {
+          "secs": 0,
+          "nanos": 856689008
+        }
+      },
+      {
+        "name": "mobc",
+        "version": "0.7",
+        "duration": null
+      },
+      {
+        "name": "qp",
+        "version": "0.2",
+        "duration": {
+          "secs": 0,
+          "nanos": 114353937
+        }
+      }
+    ]
+  }
+]

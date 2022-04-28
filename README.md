@@ -2,12 +2,19 @@
 
 ## How to run?
 
+If you got `Make` installed simply call it:
+
+```
+$ make
+```
+
+This will run the benchmarks and render the figures included in
+the [RESULTS.md](./RESULTS.md).
+
 ```
 cargo run --release
 ```
 
 ## Results?
 
-The benchmark was run on an `Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz` CPU with 128 GiB of RAM.
-
-→ [Results](./results.txt)
+→ [Results](./RESULTS.md)

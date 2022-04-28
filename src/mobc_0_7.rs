@@ -1,3 +1,7 @@
+use tokio::task::JoinHandle;
+
+use crate::BenchmarkConfig;
+
 struct Manager {}
 
 #[async_trait::async_trait]
@@ -14,19 +18,16 @@ impl ::mobc_0_7::Manager for Manager {
 
 type Pool = ::mobc_0_7::Pool<Manager>;
 
-pub async fn benchmark_mobc(pool_size: usize, workers: usize, iterations: usize) {
-    let pool = Pool::builder().max_open(pool_size as u64).build(Manager {});
-    let handles = (0..workers)
+pub async fn run(cfg: BenchmarkConfig) -> Vec<JoinHandle<()>> {
+    let pool = Pool::builder().max_open(cfg.pool_size as u64).build(Manager {});
+    (0..cfg.workers)
         .map(|_| {
             let pool = pool.clone();
             tokio::spawn(async move {
-                for _ in 0..iterations {
+                for _ in 0..cfg.iterations {
                     let _ = pool.get().await;
                 }
             })
         })
-        .collect::<Vec<_>>();
-    for handle in handles {
-        handle.await.unwrap();
-    }
+        .collect()
 }

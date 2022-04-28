@@ -1,3 +1,5 @@
+use std::{convert::Infallible};
+
 use tokio::task::JoinHandle;
 
 use crate::BenchmarkConfig;
@@ -5,21 +7,19 @@ use crate::BenchmarkConfig;
 struct Manager {}
 
 #[async_trait::async_trait]
-impl ::deadpool_0_8::managed::Manager for Manager {
-    type Type = ();
-    type Error = ();
-    async fn create(&self) -> Result<Self::Type, Self::Error> {
+impl ::deadpool_0_7::managed::Manager<(), Infallible> for Manager {
+    async fn create(&self) -> Result<(), Infallible> {
         Ok(())
     }
     async fn recycle(
         &self,
-        _: &mut Self::Type,
-    ) -> deadpool_0_8::managed::RecycleResult<Self::Error> {
+        _: &mut (),
+    ) -> ::deadpool_0_7::managed::RecycleResult<Infallible> {
         Ok(())
     }
 }
 
-type Pool = ::deadpool_0_8::managed::Pool<Manager>;
+type Pool = ::deadpool_0_7::managed::Pool<(), Infallible>;
 
 pub async fn run(cfg: BenchmarkConfig) -> Vec<JoinHandle<()>> {
     let pool = Pool::new(Manager {}, cfg.pool_size);
