@@ -34,7 +34,7 @@ pub async fn run(cfg: BenchmarkConfig) -> Vec<JoinHandle<()>> {
         .map(|_| {
             let pool = pool.clone();
             tokio::spawn(async move {
-                for _ in 0..cfg.iterations_per_worker {
+                for _ in 0..cfg.operations_per_worker() {
                     let _ = pool.get().await;
                 }
             })

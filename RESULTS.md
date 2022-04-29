@@ -25,12 +25,20 @@ MemTotal: 131839000 kB
 ❯ lsb_release -a |grep Description
 Description: Ubuntu 21.10
 ```
+### 8 Workers
 
-| pool_size = 8 | pool_size = 16 | pool_size = 32 |
-| --- | --- | --- |
-| ![](figures/result_s8_w8.svg) | ![](figures/result_s16_w8.svg) | ![](figures/result_s32_w8.svg) |
-| ![](figures/result_s8_w16.svg) | ![](figures/result_s16_w16.svg) | ![](figures/result_s32_w16.svg) |
-| ![](figures/result_s8_w32.svg) | ![](figures/result_s16_w32.svg) | ![](figures/result_s32_w32.svg) |
-| ![](figures/result_s8_w64.svg) | ![](figures/result_s16_w64.svg) | ![](figures/result_s32_w64.svg) |
-| ![](figures/result_s8_w128.svg) | ![](figures/result_s16_w128.svg) | ![](figures/result_s32_w128.svg) |
-| ![](figures/result_s8_w256.svg) | ![](figures/result_s16_w256.svg) | ![](figures/result_s32_w256.svg) |
+![](figures/result_s2_w8.svg)
+![](figures/result_s4_w8.svg)
+![](figures/result_s8_w8.svg)
+
+### 16 Workers
+
+![](figures/result_s4_w16.svg)
+![](figures/result_s8_w16.svg)
+![](figures/result_s16_w16.svg)
+
+### 32 Workers
+
+![](figures/result_s8_w32.svg)
+![](figures/result_s16_w32.svg)
+![](figures/result_s32_w32.svg)
