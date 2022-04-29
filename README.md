@@ -30,3 +30,11 @@ cargo run --release
 ```
 python3 render-figures.py
 ```
+
+# FAQ
+
+## Why is `async_object_pool` included in the sources but missing from the results?
+
+`async-object-pool` doesn't really compare to the other pool
+implementations. It is *very* fast but neither stores a reference
+to the create function nor has any means of recycling values.
